@@ -17,9 +17,10 @@ app.use(router);
 
 io.on('connection', (socket) => {
     let timer;
+    const inactivityTimeout = 60000 * 15;
     let disconnectReason = "logged out";
 
-    socket.on('join', ({ name }, callback) => {
+    socket.on('join', ({ name }) => {
         const { error, user } = addUser({ id: socket.id, name });
 
         if (error) {
@@ -27,12 +28,9 @@ io.on('connection', (socket) => {
 
             disconnectReason = error;
 
-            logger.info({
-
+            logger.error({
                 description: 'Unavailable username', reason: disconnectReason, socketID: socket.id, username: name,
             });
-
-
 
             return socket.disconnect(true);
         }
@@ -56,12 +54,12 @@ io.on('connection', (socket) => {
             });
 
             socket.disconnect(true);
-        }, 6000);
+        }, inactivityTimeout);
 
-        callback();
+
     });
 
-    socket.on('sentMessage', (message, callback) => {
+    socket.on('sentMessage', (message) => {
         const user = getUser(socket.id);
         io.emit('message', { user: user.name, text: message });
 
@@ -72,10 +70,10 @@ io.on('connection', (socket) => {
 
             socket.emit('message', { user: 'admin', text: `${user.name} ${disconnectReason}` });
             socket.emit('problem', { error: disconnectReason });
-            socket.disconnect(true);
-        }, 60000 * 15);
 
-        callback();
+            socket.disconnect(true);
+        }, inactivityTimeout);
+
     });
 
     socket.on('disconnect', () => {
