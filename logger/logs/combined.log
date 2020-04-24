@@ -37,3 +37,31 @@
 {"message":{"description":"User joined chat","socketID":"w5T4nMMxRkG9NGXMAAAN","name":"dsa"},"level":"info","timestamp":"2020-04-24 07:16:23"}
 {"message":{"description":"User disconnected","reason":"logged out","socketID":"w5T4nMMxRkG9NGXMAAAN"},"level":"info","timestamp":"2020-04-24 07:16:34"}
 {"message":{"description":"User disconnected","reason":"logged out","socketID":"qNT5ieqsk_NVvKWhAAAO"},"level":"info","timestamp":"2020-04-24 07:16:37"}
+{"message":{"description":"User joined chat","socketID":"aFIPRn1egECHFZYUAAAC","name":"dasda"},"level":"info","timestamp":"2020-04-24 07:22:31"}
+{"message":{"description":"User disconnected","reason":"Disconnected due to inactivity","socketID":"aFIPRn1egECHFZYUAAAC","username":"dasda"},"level":"info","timestamp":"2020-04-24 07:22:37"}
+{"message":{"description":"User joined chat","socketID":"izIyzDVRyStZmxfZAAAC","name":"da"},"level":"info","timestamp":"2020-04-24 07:23:51"}
+{"message":{"description":"User joined chat","socketID":"HQFh622-fhyj6BbfAAAD","name":"dasd"},"level":"info","timestamp":"2020-04-24 07:33:14"}
+{"message":{"description":"Unavailable username","reason":"Username is taken","socketID":"1B5cCvp6-wyt3X2ZAAAE","username":"dasd"},"level":"error","timestamp":"2020-04-24 07:34:47"}
+{"message":{"description":"User joined chat","socketID":"EzkxrJqtf-7LJBluAAAF","name":"dsasa"},"level":"info","timestamp":"2020-04-24 07:34:49"}
+{"message":{"description":"User disconnected","reason":"logged out","socketID":"EzkxrJqtf-7LJBluAAAF"},"level":"info","timestamp":"2020-04-24 07:34:53"}
+{"message":{"description":"User joined chat","socketID":"azAlXngl6eyeqCWwAAAG","name":"dsasa"},"level":"info","timestamp":"2020-04-24 07:34:53"}
+{"message":{"description":"User disconnected","reason":"Disconnected due to inactivity","socketID":"izIyzDVRyStZmxfZAAAC","username":"da"},"level":"info","timestamp":"2020-04-24 07:38:51"}
+{"message":{"description":"User disconnected","reason":"logged out","socketID":"HQFh622-fhyj6BbfAAAD"},"level":"info","timestamp":"2020-04-24 07:38:55"}
+{"message":{"description":"User joined chat","socketID":"tGTMXBQAZX8MAKrcAAAH","name":"dasd"},"level":"info","timestamp":"2020-04-24 07:38:55"}
+{"message":{"description":"User disconnected","reason":"logged out","socketID":"tGTMXBQAZX8MAKrcAAAH"},"level":"info","timestamp":"2020-04-24 07:39:03"}
+{"message":{"description":"User joined chat","socketID":"Qd2CFlmZtL0GwM5lAAAI","name":"dsadasdsa"},"level":"info","timestamp":"2020-04-24 07:39:06"}
+{"message":{"description":"User disconnected","reason":"logged out","socketID":"Qd2CFlmZtL0GwM5lAAAI"},"level":"info","timestamp":"2020-04-24 07:39:12"}
+{"message":{"description":"User joined chat","socketID":"Pqoc76poHTEKCpDDAAAB","name":"dsad"},"level":"info","timestamp":"2020-04-24 07:39:58"}
+{"message":{"description":"User disconnected","reason":"logged out","socketID":"Pqoc76poHTEKCpDDAAAB"},"level":"info","timestamp":"2020-04-24 07:40:08"}
+{"message":{"description":"User disconnected","reason":"logged out","socketID":"PxG5wTCdtylhjoATAAAA"},"level":"info","timestamp":"2020-04-24 07:40:16"}
+{"message":{"description":"User disconnected","reason":"logged out","socketID":"vhBJKbG6HuO6BbLvAAAC"},"level":"info","timestamp":"2020-04-24 07:40:16"}
+{"message":{"description":"User joined chat","socketID":"YFp95X-CiDoCTWDcAAAE","name":"dsa"},"level":"info","timestamp":"2020-04-24 07:40:24"}
+{"message":{"description":"User joined chat","socketID":"xtVPrm7VaBudRhVhAAAF","name":"dsads"},"level":"info","timestamp":"2020-04-24 07:40:28"}
+{"message":{"description":"User disconnected","reason":"logged out","socketID":"YFp95X-CiDoCTWDcAAAE"},"level":"info","timestamp":"2020-04-24 07:40:32"}
+{"message":{"description":"User joined chat","socketID":"dVXhXb9vHbUuWrhYAAAG","name":"das"},"level":"info","timestamp":"2020-04-24 07:40:34"}
+{"message":{"description":"User disconnected","reason":"logged out","socketID":"xtVPrm7VaBudRhVhAAAF"},"level":"info","timestamp":"2020-04-24 07:40:56"}
+{"message":{"description":"User joined chat","socketID":"3HX_VseKY1MAIqKXAAAC","name":"dsad"},"level":"info","timestamp":"2020-04-24 07:41:47"}
+{"message":{"description":"User joined chat","socketID":"lD9r0lAXnrvjidREAAAD","name":"wda"},"level":"info","timestamp":"2020-04-24 07:41:54"}
+{"message":{"description":"User disconnected","reason":"logged out","socketID":"lD9r0lAXnrvjidREAAAD"},"level":"info","timestamp":"2020-04-24 07:41:58"}
+{"message":{"description":"User disconnected","reason":"logged out","socketID":"3HX_VseKY1MAIqKXAAAC"},"level":"info","timestamp":"2020-04-24 07:42:03"}
+{"message":{"description":"User disconnected","reason":"logged out","socketID":"MluTiRE8kqPWcU5HAAAA"},"level":"info","timestamp":"2020-04-24 07:42:03"}

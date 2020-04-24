@@ -85,7 +85,7 @@ io.on('connection', (socket) => {
             });
         }
 
-        if (user) io.emit('message', { user: user.name, text: `${user.name} left the chat` });
+        if (user) io.emit('message', { user: 'admin', text: `${user.name} left the chat` });
     });
 });
 
