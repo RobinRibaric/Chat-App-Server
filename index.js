@@ -1,6 +1,7 @@
 const http = require('http');
 const express = require('./node_modules/express');
 const socketio = require('./node_modules/socket.io/lib');
+const logger = require('./logger');
 
 const PORT = process.env.PORT || 5000;
 
@@ -16,14 +17,29 @@ app.use(router);
 
 io.on('connection', (socket) => {
     let timer;
+    let disconnectReason = "logged out";
 
     socket.on('join', ({ name }, callback) => {
         const { error, user } = addUser({ id: socket.id, name });
 
         if (error) {
-            socket.emit('problem', { error: 'Username already taken' });
+            socket.emit('problem', { error });
+
+            disconnectReason = error;
+
+            logger.info({
+
+                description: 'Unavailable username', reason: disconnectReason, socketID: socket.id, username: name,
+            });
+
+
+
             return socket.disconnect(true);
         }
+
+        logger.info({
+            description: 'User joined chat', socketID: socket.id, name
+        });
 
         socket.emit('message', { user: 'admin', text: `${user.name}, Welcome!` });
 
@@ -31,10 +47,16 @@ io.on('connection', (socket) => {
 
 
         timer = setTimeout(() => {
-            socket.emit('message', { user: 'admin', text: `${user.name} logged of due to inactivity` });
-            socket.emit('problem', { error: 'Logged of due to inactivity' });
+            disconnectReason = 'Disconnected due to inactivity';
+            socket.emit('message', { user: 'admin', text: `${user.name} ${disconnectReason}` });
+            socket.emit('problem', { error: disconnectReason });
+
+            logger.info({
+                description: 'User disconnected', reason: disconnectReason, socketID: socket.id, username: name,
+            });
+
             socket.disconnect(true);
-        }, 60000 * 15);
+        }, 6000);
 
         callback();
     });
@@ -46,8 +68,10 @@ io.on('connection', (socket) => {
         clearTimeout(timer);
 
         timer = setTimeout(() => {
-            socket.emit('message', { user: 'admin', text: `${user.name} logged of due to inactivity` });
-            socket.emit('problem', { error: 'Logged of due to inactivity' });
+            disconnectReason = 'Disconnected due to inactivity';
+
+            socket.emit('message', { user: 'admin', text: `${user.name} ${disconnectReason}` });
+            socket.emit('problem', { error: disconnectReason });
             socket.disconnect(true);
         }, 60000 * 15);
 
@@ -56,7 +80,13 @@ io.on('connection', (socket) => {
 
     socket.on('disconnect', () => {
         const user = removeUser(socket.id);
-        console.log('user disconnected!');
+
+        if (disconnectReason === "logged out") {
+            logger.info({
+                description: 'User disconnected', reason: disconnectReason, socketID: socket.id,
+            });
+        }
+
         if (user) io.emit('message', { user: user.name, text: `${user.name} left the chat` });
     });
 });

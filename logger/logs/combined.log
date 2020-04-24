@@ -1,0 +1,16 @@
+{"message":{"description":"User disconnected","reason":"logged off","socketID":"HEZz00D19bFmUI4JAAAB"},"level":"info","timestamp":"2020-04-24 06:28:57"}
+{"message":{"description":"Unavailable username","reason":"Username is taken","socketID":"pld6NMLT9PBHUgibAAAE","username":"jurko"},"level":"info","timestamp":"2020-04-24 06:31:30"}
+{"message":{"description":"User disconnected","reason":"logged off","socketID":"pld6NMLT9PBHUgibAAAE"},"level":"info","timestamp":"2020-04-24 06:31:30"}
+{"message":{"description":"Unavailable username","reason":"Username is taken","socketID":"4CCoZFglc8Y8cTk6AAAE","username":"dasd"},"level":"info","timestamp":"2020-04-24 06:48:05"}
+{"message":{"description":"User disconnected","reason":"logged off","socketID":"4CCoZFglc8Y8cTk6AAAE"},"level":"info","timestamp":"2020-04-24 06:48:05"}
+{"message":{"description":"Unavailable username","reason":"Username is taken","socketID":"Mwm6tJagda1vqsHrAAAF","username":"dasd"},"level":"info","timestamp":"2020-04-24 06:49:39"}
+{"message":{"description":"User disconnected","reason":"Username is taken","socketID":"Mwm6tJagda1vqsHrAAAF"},"level":"info","timestamp":"2020-04-24 06:49:39"}
+{"message":{"description":"Unavailable username","reason":"Username is taken","socketID":"n5qfAfYKUaaVagd9AAAG","username":"jalla"},"level":"info","timestamp":"2020-04-24 06:55:16"}
+{"message":{"description":"User disconnected","reason":"logged out","socketID":"14rjHEXYAwxwc0vqAAAD"},"level":"info","timestamp":"2020-04-24 06:55:28"}
+{"message":{"description":"User disconnected","reason":"logged out","socketID":"oBz3rThFRmoSW_rgAAAH"},"level":"info","timestamp":"2020-04-24 06:55:28"}
+{"message":{"description":"User disconnected","reason":"logged out","socketID":"ZxEu0etlEjPSJwUDAAAE"},"level":"info","timestamp":"2020-04-24 06:55:28"}
+{"message":{"description":"User disconnected","reason":"logged out","socketID":"Imw9EOBw6fkzQbvbAAAA"},"level":"info","timestamp":"2020-04-24 06:55:56"}
+{"message":{"description":"User disconnected","reason":"logged out","socketID":"Ca9KmRUdVSCViJPOAAAF"},"level":"info","timestamp":"2020-04-24 06:55:56"}
+{"message":{"description":"User joined chat","socketID":"AhDiU36sYSghkjAYAAAE","name":"dada"},"level":"info","timestamp":"2020-04-24 06:58:18"}
+{"message":{"description":"User joined chat","socketID":"QLHKsaT6HLglqVXZAAAE","name":"dada"},"level":"info","timestamp":"2020-04-24 06:58:56"}
+{"message":{"description":"User disconnected","reason":"Disconnected due to inactivity","socketID":"QLHKsaT6HLglqVXZAAAE","username":"dada"},"level":"info","timestamp":"2020-04-24 06:59:02"}
